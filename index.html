@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+    <form onsubmit="return submitForm()">
+        <label for="na">Name <sup class="sup">*</sup></label>
+        <br>
+        <input type="text" id="na" placeholder="Enter name">
+        <br>
+        <span id="a1" class="sp"></span>
+        <br><br>
+        <label for="nu">Number <sup class="sup">*</sup></label>
+        <br>
+        <input type="number" id="nu" placeholder="Enter number">
+        <br>
+        <span id="a2" class="sp"></span>
+        <br><br>
+        <label for="ma">E-mail <sup class="sup">*</sup></label>
+        <br>
+        <input type="email" id="ma" placeholder="Enter email">
+        <br>
+        <span id="a3" class="sp"></span>
+        <br><br><br>
+        <input type="submit" id="submit">
+    </form>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
