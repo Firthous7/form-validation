@@ -4,6 +4,11 @@ function submitForm(){
     let Number = document.getElementById('nu').value;
     let Mail = document.getElementById('ma').value.trim();
 
+    
+    localStorage.setItem("User Name", Name);
+    localStorage.setItem("User Number", Number);
+    localStorage.setItem("User Email", Mail);
+
     if(Name==""){
         document.getElementById('a1').innerHTML = "Name is required";
         return false;
@@ -31,8 +36,6 @@ function submitForm(){
     else {
         document.getElementById('a3').innerHTML = "";
     }
-
-    document.getElementById('a3').innerHTML = "";
 
     alert("Form is submitted successfully!");
     return true;
