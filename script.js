@@ -16,6 +16,10 @@ function submitForm(){
         document.getElementById('a2').innerHTML = "Number is required";
         return false;
     }
+    else if(isNaN(Number)){
+        document.getElementById('a2').innerHTML = "Enter numbers only";
+        return false;
+    }
     else{
         document.getElementById('a2').innerHTML = "";
     }
